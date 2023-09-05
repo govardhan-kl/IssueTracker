@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(85, 239, 250);
+}
+
+  .projects:hover{
+    background-color: lightcyan;
+  }
+
+  td a{
+    text-decoration: none;
+    color: rgb(4, 62, 235);
+  }
+
+  td a:hover{
+    color: blue;
+    text-decoration: underline;
+  }

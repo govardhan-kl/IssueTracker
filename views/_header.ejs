@@ -1,0 +1,8 @@
+<header>
+    <% if (!locals.home) { %> 
+        <a href="/home"><p><button>Home</button></p></a>
+    <% } %>
+    <% if (locals.createBug) { %> 
+        <a href="/view-project-details/<%= postid %>"><p><button>View Project Details</button></p></a>
+    <% } %>
+</header>

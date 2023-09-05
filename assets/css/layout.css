@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    color: red ;
+}
+
+h2{
+    text-align: center ;
+    font-family: sans-serif ;
+}
+
+p{
+    text-align: center ;
+    margin: 0px ;
+}
+
+button{
+    padding: 10px ;
+    background-color: rgb(74, 74, 242);
+    color: aliceblue ;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 1%;
+  }
+
+  #mainRow{
+    background-color: lightgrey;
+  }

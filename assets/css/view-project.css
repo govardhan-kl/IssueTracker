@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(85, 239, 250);
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+    color: red ;
+}
+
+h2{
+    text-align: center ;
+    font-family: sans-serif ;
+}
+
+p{
+    text-align: center ;
+    margin: 0px ;
+}
+
+button{
+    padding: 6px ;
+    background-color: rgb(74, 74, 242);
+    color: aliceblue ;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 1%;
+  }
+
+  #mainRow{
+    background-color: lightgrey;
+  }
+
+#display-issues{
+    margin-top: 15px;
+}
+
+#bugtable{
+    background-color: lightgrey;
+}
+
+
+#input-data{
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#form-submit:hover{
+    cursor: pointer;
+}
+
+.labels p{
+    text-align: center;
+}
+
+.Bug{
+    width: auto;
+    background-color: red;
+    border-radius: 5px;
+    margin: 0% 28%;
+}
+
+.Documentaion{
+    width: auto;
+    background-color: green;
+    border-radius: 5px;
+    margin: 0% 12%;
+}
+
+.Enhancements{
+    width: auto;
+    background-color: rgb(19, 250, 65);
+    border-radius: 5px;
+    margin: 0% 12%;
+}
+
+.Task{
+    width: auto;
+    background-color: rgb(20, 120, 243);
+    border-radius: 5px;
+    margin: 0% 25%;
+}
+
+.Story{
+    width: auto;
+    background-color: rgb(232, 248, 7);
+    border-radius: 5px;
+    margin: 0% 25%;    
+}
+
+.issues:hover{
+    background-color: lightcyan;
+}

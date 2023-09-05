@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+    font-family: sans-serif;
+    margin: 0% 30%;
+}
+
+
+h1{
+    text-align: center;
+    color: red;
+}
+input,textarea{
+    width: 100%;
+}
+
+.input{
+    border: 0px;
+    border-radius: 5px;
+}
+
+#create-project input,textarea{
+    margin-bottom: 5%;
+}
+
+p{
+    text-align: center;
+    margin: 0px;
+}
+

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/home.css">
+<div>
+    <h1><%= title %></h1>
+</div>
+<main>
+    <p><a href="/add-project"><button>Add Project</button></a></p>
+    <% if (projects){ %> 
+        <h2>List Of Projects</h2>
+    <% } %>
+    <div id="project-container">
+        <table style="width:100%">
+            <tr id="mainRow">
+                <th>Name</th>
+                <th style="width: 50%">Description</th>
+                <th>Author</th>
+                <th style="width: 10%;">View</th>
+            </tr>
+            <% for(let i of projects){ %> 
+                <tr class="projects">
+                    <td><%= i.name %></td>
+                    <td><%= i.description %></td>
+                    <td><%= i.author %></td>
+                    <td><a href="/view-project-details/<%=i.id%>">View-<%=i.name%></a></td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</main>

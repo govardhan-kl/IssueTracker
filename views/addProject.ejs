@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/addProject.css">
+<h1>Add a Project Details</h1>
+<form id="create-project" action="/add-project/create" method="post">
+    <label for="name">
+       Name <input class="input" id="name" type="text" name="name" placeholder="Enter project name" required>
+    </label>
+    <label for="description">
+       Description <textarea class="input" id="description" type="text" name="description" cols="30" rows="3" placeholder="Add a description" required></textarea>
+    </label>
+    <label for="author">
+        Author <input class="input" id="author" type="text" name="author" placeholder="Enter author name" required>
+    </label>
+    <p><button type="submit">Create Project</button></p>
+</form>
