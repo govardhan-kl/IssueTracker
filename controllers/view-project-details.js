@@ -12,7 +12,7 @@ module.exports.view_details = async function(req,res){
             title : "Project Details",
             project,
             issues,
-            filter:false //this helps us to get the all the bugs/issues in project for faster rendering/querying
+            filter:false //this helps us to get the all the bugs/issues in project for faster rendering/querying by populating
         })
     }
     catch(err){
@@ -32,7 +32,7 @@ module.exports.filter = async function(req,res){
             if(body.authors && body.labels){
                 let autor = req.body.authors;
                 let labels = req.body.labels;
-                let issues = await BugDetails.find({projectID:projectid,author:autor,labels:labels});
+                let issues = await BugDetails.find({projectID:projectid,author:autor,labels:{$all:labels}});
                 return res.render('view-project-details',{
                     title:"Project Details",
                     project,
@@ -54,7 +54,7 @@ module.exports.filter = async function(req,res){
             // if searching based on only labels
             else if(body.labels){
                 let labels = req.body.labels;
-                let issues = await BugDetails.find({projectID:projectid,labels:labels});
+                let issues = await BugDetails.find({projectID:projectid,labels:{$all:labels}});
                 return res.render('view-project-details',{
                     title:"Project Details",
                     project,
